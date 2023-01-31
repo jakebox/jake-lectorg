@@ -1,0 +1,25 @@
+Jake Ed Emacs
+
+
+Class variable data:
+1) Class
+2) Syllabus file
+3) Courseworks link
+
+Functions:
+1) [X] Write note file
+   * select directory from list in ~notes~ directory
+   * asks for day and filename, year and month and extension autopopulated
+     - upgrade for later: prompts for author and title and automatically makes filename
+   * format:
+     - YEAR-MONTH-DAY-source-a_longer_title.org
+2) [X] Open note file from class folder
+   + reads directories in ~notes~
+3) [ ] Open note file (no narrowing, just all .org files)
+4) [ ] Retrieve syllabus
+5) [ ] Open Courseworks page
+
+
+Snippets:
++ <notes
+  * template/form for putting information on a source

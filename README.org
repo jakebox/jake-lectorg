@@ -1,0 +1,5 @@
+* lectorg-jake
+
+My take on https://gitlab.com/velocitatem/lectorg
+
+WIP
