@@ -36,7 +36,8 @@
 							 '((?s "syllabus")
 							   (?b "book")
 							   (?n "notes")
-							   (?w "website")))))
+							   (?w "website")
+							   (?l "links")))))
 
 (defun lectorg-open-syllabus-item-mac (syllabus-item)
   (shell-command (concat "open " (shell-quote-argument
@@ -68,6 +69,9 @@
      ((eq resource ?w) ;; website
       (browse-url-chrome (car (nth 4 (nth class-index recs)))))
 
+	 ((eq resource ?l) ;; links
+	  (let ((links (nth 5 (nth class-index recs))))
+		(browse-url-chrome (cdr (assoc (completing-read "Enter file name: " links nil t "") links))))) 
 	 ))
   )
 
